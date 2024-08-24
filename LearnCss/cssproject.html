@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css web page</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5em;
+        }
+        #header {
+            background:black;
+            font-family: Arial;
+            height: 100px;
+        }
+        #contentwrapper {
+            float : left;
+            width: 100%;
+        }
+        #contentcolumn {
+            margin:  1 230px 0 230px;
+        }
+        #leftcolumn {
+            float: left;
+            width: 230px;
+            margin-left: -100%;
+            background: cyan;
+        }
+
+        #rightcolumn {
+            float: left;
+            width: 230px;
+            margin-left: -230px;
+            background: yellow;
+        }
+        .innertext {
+            margin: 20px;
+            font-family: Arial;
+            color: darkgrey;
+        }
+        #footer {
+            clear: left;
+            width: 100%;
+            background: black;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding: 4px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align:  center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: grey;
+        }
+        .active {
+            background-color: aqua;
+        }
+
+
+        /* responsive layout */
+
+
+    @media (max-width: 840px) {
+            
+        #leftcolum {
+            margin-left: -100%;
+        }
+        #rightcolumn {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            clear: both;
+        }
+
+        #contentcolumn {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #leftcolum {
+            float: none;
+            width: 100%;
+            clear: both;
+            margin-left: 0;
+        }
+        #contentcolumn {
+            margin-right: 0;
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+        <div id="header">
+            <ul style="display :inline">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#news" >News</a></li>
+                <li><a href="#contact" >Contact</a></li>
+                <li><a href="#about" >About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="contentwrapper">
+        <div id="contentcolumn">
+            <div id="innertext">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vitae deserunt facere nisi voluptatem beatae perferendis ipsa nam eveniet aut nemo hic, sapiente consectetur soluta minus error voluptate unde non.</p>
+            </div>
+        </div>
+    </div>
+    <div id="leftcolumn">
+        <div id="innertext">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam deleniti animi modi nobis ipsa nemo, vel nisi, vero enim numquam sapiente inventore, repellat architecto error. Beatae omnis eius laborum fugit veniam reiciendis! Voluptatem iusto unde numquam soluta possimus dolore qui?</p>
+        </div>
+    </div>
+    <div id="rightcolumn">
+        <div id="innertext">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam deleniti animi modi nobis ipsa nemo, vel nisi, vero enim numquam sapiente inventore, repellat architecto error. Beatae omnis eius laborum fugit veniam reiciendis! Voluptatem iusto unde numquam soluta possimus dolore qui?</p>
+        </div>
+    </div>
+    <div id="footer">wowkeren banget</div>
+    
+</body>
+</html>
