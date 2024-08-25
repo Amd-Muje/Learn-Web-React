@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variabels</title>
+
+    <script>
+        var x = 10;
+        var y = 20;
+        var z = x + y;
+
+        document.getElementById("math").innerHTML = z;
+
+    </script>
+
+</head>
+<body>
+
+    <p id="math"></p>
+    <p id="mobil"></p>
+    <p id="coba1"></p>
+    <p id="coba2"></p>
+    <p id="coba3"></p>
+    <p id="coba4"></p>
+    <p id="coba5"></p>
+    <p id="coba6"></p>
+    <p id="coba7"></p>
+    <p id="coba8"></p>
+    <p id="coba9"></p>
+    <p id="coba10"></p>
+    <p id="coba11"></p>
+    <p id="coba12"></p>
+    <p id="coba13"></p>
+    <p id="coba14"></p>
+    <!-- //js event -->
+        <!-- // Mouse Click -->
+        <!-- // Mouse Over -->
+        <!-- // Mouse Out -->
+        <!-- // Key Down -->
+        <!-- // Document Load -->
+        <button onclick="getElementById('coba14').innerHTML=Date()">Time</button>
+    
+
+    <script>
+        var x = 10;
+        var y = 20;
+        var z = x + y;
+
+        document.getElementById("math").innerHTML = z;
+
+
+        // belajar object
+        var car = {type:"Honda" , model:"civic", color:"putih"}
+        document.getElementById("mobil").innerHTML = car.model + " berwana "+ car.color;
+
+        // hitung panjang string pakau .length
+        var txt = "adjopasdjop";
+        document.getElementById("coba1").innerHTML = txt.length;
+
+        //special Character \" isi text \"
+        var y = "we are the \"champions\" till the end";
+        document.getElementById("coba2").innerHTML = y;
+
+        // generate random number math.random
+        document.getElementById("coba3").innerHTML = Math.random();
+
+        // menentukan nilai min dan max
+        document.getElementById("coba4").innerHTML = Math.min(12, 53 ,-23, 0 ,213 ,-200);
+
+        // membulatkan nilai
+        document.getElementById("coba5").innerHTML = Math.round(23.4);
+
+        // array
+        var air = ["aqua","leminerale","cleo","agro","vit"];
+        document.getElementById("coba6").innerHTML = air[1];
+        // panjang array
+        document.getElementById("coba7").innerHTML = air.length;
+        //output semua array
+        document.getElementById("coba8").innerHTML = air.toString();
+        document.getElementById("coba9").innerHTML = air.join(" + ");
+        air.splice(2, 0, "lemon")
+        document.getElementById("coba10").innerHTML = air.join(" + ");
+        air.sort();
+        document.getElementById("coba11").innerHTML = air.join(" + ");
+        
+        var girls = ["melisa","Remi"];
+        var boys = ["Mike","Lucas"];
+        var Combined = girls.concat(boys);
+        
+        document.getElementById("coba12").innerHTML = Combined;
+
+        var nilai = 30;
+
+        if (nilai < 10) {
+            document.write("wow")
+        }
+        else {
+            document.write("mom")
+        }
+
+        // perbandingan
+
+        var t = 7;
+        document.getElementById("coba13").innerHTML = (t == 0);
+
+        //for loop
+        for(count = 0; count <= 10; count++) {
+            document.write(count);
+            document.write("<br>");
+        }
+
+        
+
+
+
+
+
+        </script>
+    </body>
+</html>
